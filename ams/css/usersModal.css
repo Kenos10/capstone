@@ -1,0 +1,201 @@
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 10; 
+    padding: 1% 0; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+    backdrop-filter: blur(2px);
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 1.5rem 3rem;
+    border: 1px solid #888;
+    border-radius: .5rem;
+    width: 50%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .modal-content h3{
+    font-size: 20px;
+    margin-bottom: 1rem;
+    position: relative;
+  }
+  .modal-content h3::after{
+    position: absolute;
+    content:'';
+    width: 5%;
+    border: 2px solid var(--colorGreen);
+    bottom: -.2rem;
+    left: 0;
+  }
+  .modal-content form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .modal-content label, .modal-content legend{
+    font-weight: bold;
+    margin: .5rem 0;
+    font-size: 13px;
+  }
+  .form-group label{
+    display: block;
+  }
+  .modal-content legend{
+    color: gray;
+  }
+  .form-group{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  .form-group input, .form-group select{
+    width: 100%;
+    border: 1px solid;
+    border-radius: .2rem;
+    padding: .75rem;
+  }
+  .modal-content input[type="submit"]{
+    width: 100%;
+    margin-top: 1rem;
+    font-size: 15px;
+    padding: 1rem;
+    background-color: var(--colorInfo);
+    color: white;
+    border-radius: .2rem;
+    border: none;
+  }
+  .modal-content input[type="submit"]:hover{
+    background-color: #007BFF;
+  }
+  .form-search{
+    position: relative;
+  }
+  .form-search input{
+    padding-left: 3rem;
+  }
+  .form-search span{
+    position: absolute;
+    display: block;
+    bottom: .7rem;
+    left: 1rem;
+  }
+  .form-search img{
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+  /**/
+  .modal1 {
+    display: none;
+    position: fixed;
+    z-index: 10; 
+    padding: 1% 0; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+    backdrop-filter: blur(2px);
+  }
+  
+  /* Modal Content */
+  .modal-content1 {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 1.5rem 3rem;
+    border: 1px solid #888;
+    border-radius: .5rem;
+    width: 50%;
+  }
+  
+  /* The Close Button */
+  .close1 {
+    color: #aaaaaa;
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  .close1:hover,
+  .close1:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .modal-content1 h3{
+    font-size: 20px;
+    margin-bottom: 1rem;
+    position: relative;
+  }
+  .modal-content1 h3::after{
+    position: absolute;
+    content:'';
+    width: 5%;
+    border: 2px solid var(--colorGreen);
+    bottom: -.2rem;
+    left: 0;
+  }
+  .modal-content1 form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .modal-content1 label, .modal-content1 legend{
+    font-weight: bold;
+    margin: .5rem 0;
+    font-size: 13px;
+  }
+  .form-group1 label{
+    display: block;
+  }
+  .modal-content1 legend{
+    color: gray;
+  }
+  .form-group1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  .form-group1 input, .form-group1 select{
+    width: 100%;
+    border: 1px solid;
+    border-radius: .2rem;
+    padding: .75rem;
+  }
+  .modal-content1 input[type="submit"]{
+    width: 100%;
+    margin-top: 1rem;
+    font-size: 15px;
+    padding: 1rem;
+    background-color: var(--colorInfo);
+    color: white;
+    border-radius: .2rem;
+    border: none;
+  }
+  .modal-content1 input[type="submit"]:hover{
+    background-color: #007BFF;
+  }

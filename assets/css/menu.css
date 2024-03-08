@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@300&display=swap');
+:root{
+    --font: 'Righteous', cursive;
+    --font: 'Roboto', sans-serif;
+    --fontsize: 13.5px;
+    --colorBG: #e4eaf2;
+    --colorGrey: #eff3f6;
+    --colorGreyD: #bdbdbd;
+    --colorGreen: #36c574;
+    --colorGreenD: #39b870;
+    --colorMenuHover: #dbfbe9;
+    --colorInfo: #53bcdc;
+    --colorOrange: #FFA500;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: var(--font);
+    font-family: var(--font);
+}
+body {
+    overflow-x: hidden;
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: transparent transparent; /* For Firefox */
+}
+body::-webkit-scrollbar {
+    width: 0.1rem; /* Adjust the width as needed */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: transparent; /* Adjust to match background color */
+}
+
+body::-webkit-scrollbar-track {
+    background-color: transparent; /* Adjust to match background color */
+}
+/*info**/
+b{
+    text-decoration: underline;
+    font-weight: normal;
+}
+/*breadcrumb**/
+.breadcrumb p:not(:last-child)::after {
+    content: "/";
+    margin: 0 5px;
+}
+.title-dashboard .breadcrumb{
+    display: flex;
+    gap: 0;
+    cursor: pointer;
+    font-size: var(--fontsize);
+}
+.breadcrumb p:hover {
+    color: #007BFF;
+}
+.active-page{
+    color: #007BFF;
+}
+/***/
+::-webkit-scrollbar{
+    width: .5rem;
+}
+::-webkit-scrollbar-track{
+    border-radius: 1rem;
+    background-color: none;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 1rem;
+    background: var(--colorGreyD);
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--colorBG);
+}
+.menu-section{
+    height: 100vh;
+    width: 16vw;
+    z-index: 4;
+    position: fixed;
+    background-color: white;
+}
+.active{
+    visibility: hidden;
+}
+header{
+    position: fixed;
+    background-color: var(--colorGreenD);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
+    width: 100vw;
+    height: 4rem;
+    z-index: 5;
+    display: grid;
+    grid-template-columns: 16vw 84vw;
+    grid-template-rows: 4rem;
+}
+.table-icon{
+    width: 1rem !important;
+    height: 1rem !important;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--colorGreen);
+}
+.logo div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    height: 4rem;
+}
+.logo #logo{
+    width: 5.5rem;
+    height: 3rem;
+}
+.logo #menu{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.profile{
+    margin-left: 2.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 94.4%;
+}
+header input[type=search]{
+    outline: none;
+    border: none;
+    border-radius: 2rem;
+    padding: .5rem .5rem .5rem 3rem;
+    width: 15rem;
+}
+.main img{
+    width: 1rem;
+    height: 1rem;
+}
+.search{
+    position: relative;
+}
+.search-icon{
+    display: none;
+}
+.search span > img{
+    position: absolute;
+    left: 1rem;
+    bottom: .5rem;
+    width: 1rem;
+    height: 1rem;
+}
+.card-profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.card-profile .menu-profile{
+    position: relative;
+}
+.card-profile > img{
+    border-radius: 100%;
+    object-fit: cover;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+.card-profile .menu-profile img{
+    width: 1rem;
+    height: 1rem;
+    cursor: pointer;
+}
+.card-user{
+    color: white;
+    font-size: var(--fontsize);
+    font-weight: bold;
+}
+.card-user p:last-child{
+    font-size: 11px;
+    font-weight: normal;
+    text-transform: capitalize;
+}
+.card-profile .sy > select{
+    font-size: var(--fontsize2);
+    text-transform: capitalize;
+    background-color: transparent;
+    border: none;
+    color: white;
+    width: 15rem !important;
+    padding: 0;
+}
+.card-profile .sy > select option{
+    color: black;
+    text-align: left;
+}
+/***/
+
+.menu-container{
+    margin-top: 5rem;
+    padding-left: 1.7rem;
+}
+.main-container{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+}
+.title img{
+    display: block;
+}
+.title{
+    display: flex;
+    align-items: center;
+    line-height: 2rem;
+    gap: 1rem;
+}
+.sub a{
+    padding: .2rem .2rem .2rem 2rem;
+    line-height: 1.5rem;
+    font-size: var(--fontsize);
+    border-radius: 2rem 0 0 2rem;
+    color: black;
+    display: block;
+}
+.sub a:hover{
+    cursor: pointer;
+    background-color: var(--colorBG);
+}
+h4{
+    font-size: var(--fontsize);
+    color: #2196f3;
+    font-weight: bold;
+}
+/* .dashboard .sub > a:first-child{
+    font-weight: bold;
+    background-color: var(--colorMenuHover);
+    color: var(--colorGreenD);
+} */
+.main .sub .active-page{
+    font-weight: bold;
+    background-color: var(--colorMenuHover);
+    color: var(--colorGreenD);
+}
+.menu-profile ul{
+    position: fixed;
+    width: 11rem;
+    top: 4.5rem;
+    right: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+    padding: 1rem 0 1rem 0;
+    border-radius: .2rem;
+    visibility: hidden;
+}
+.menu-profile li{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    padding: .8rem 0 .8rem 1rem;
+    font-size: var(--fontsize);
+    color: black;
+}
+.menu-profile ul li:hover{
+    background-color: var(--colorGrey);
+}
+.menu-profile .show{
+    visibility: visible;
+}
+.request{
+    position: relative;
+}
+.request img{
+    width: 1.2rem;
+    height: 1.2rem;
+}
+.request p{
+    position: absolute;
+    top: -.5rem;
+    right: -.2rem;
+    background-color: var(--colorOrange);
+    color: white;
+    width: 1rem;
+    height: 1rem;
+    padding: .2rem;
+    text-align: center;
+    font-size: 8px;
+    border-radius: 50%;
+}
+/***/
+#result{
+    display: none;
+    position: absolute;
+    top: 3.5rem;
+    background-color: white;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+    padding: .5rem;
+}
+#result td{
+    width: fit-content;
+    padding-right: 1rem;
+    cursor: pointer;
+}
+#result tbody{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+#result tr{
+    padding: 1rem;
+}
+#result tr:hover{
+    background-color: var(--grey2);
+}
+@media (max-width: 768px) {
+    .menu-profile ul{
+        right: 1rem;
+    }
+    input[type=search], .search span > img, .card-user{
+        display: none;
+    }
+    header{
+        grid-template-columns: 40vw 60vw;
+    }
+    .menu-section{
+        width: 40vw;
+        z-index: 2;
+        visibility: hidden;
+    }
+    .search-icon{
+        background-color: white;
+        border-radius: 100%;
+        width: 2rem;
+        height: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .search-icon img{
+        height: 1rem;
+        width: 1rem;
+    }
+/* Initially hide the overlay */
+    .overlay {
+        visibility: visible;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+  
+  /* When the .active class is applied to any element, show the overlay */
+    .active{
+        visibility: visible;
+    }
+  
+}

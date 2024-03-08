@@ -1,0 +1,221 @@
+.home{
+    position: absolute;
+    width: 84vw;
+    right: 0;
+    margin-top: 4rem;
+    transition: all ease .3s;
+    display: flex;
+    justify-content: flex-end;
+}
+.container-active{
+    width: 100vw
+}
+.title-dashboard{
+    width: 100%;
+    height: 7.4rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0 3% 0 2.5%;
+    background-color: var(--colorMenuHover);
+}
+.title-dashboard div{
+    display: flex;
+    gap: 1rem;
+}
+.title-dashboard h2{
+    font-weight: normal;
+}
+.title-dashboard span{
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    border-radius: .5rem;
+    background-color: var(--colorGreen);
+}
+.title-dashboard img{
+    margin: .5rem;
+    width: 1rem;
+    height: 1rem;
+}
+.title-dashboard button{
+    width: fit-content;
+    padding: .5rem;
+    background-color: white;
+    color: var(--colorGreen);
+    border: none;
+    font-weight: bold;
+    box-shadow: 0px 8px 5px -5px rgba(0,0,0,0.1);
+    transition: all ease-in-out .2s;
+}
+.title-dashboard button:hover{
+    transform: scale(.95);
+}
+.breadcrumb p:not(:last-child)::after {
+    content: "/";
+    margin: 0 5px;
+}
+.title-dashboard .breadcrumb{
+    display: flex;
+    gap: 0;
+    cursor: pointer;
+}
+.breadcrumb p:hover {
+    color: #007BFF;
+}
+.active-page{
+    color: #007BFF;
+}
+/***/
+.home-container{
+    position: absolute;
+    top: 6rem;
+    left: 2.6%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 95%;
+    height: fit-content;
+    background-color: white;
+    padding: 1rem;
+    border-radius: .2rem;
+    box-shadow: 0px 8px 5px -5px rgba(0,0,0,0.1);
+}
+/***/
+.table-card{
+    margin: auto;
+    width: 100%;
+    height: fit-content;
+    background-color: white;
+    position: relative;
+}
+.table-card table{
+    width: 100%;
+    border-collapse:collapse;
+}
+.table-title th{
+    padding: .75rem;
+    color: white;
+    position: relative;
+    background-color: var(--colorGreen);
+}
+/***/
+.count{
+    font-weight: bold;
+    font-size: 25px;
+}
+.count-title{
+    font-size: 14px;
+}
+.date{
+    font-size: 20px;
+}
+/***/
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 10; 
+    padding: 1% 0; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+    backdrop-filter: blur(2px);
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 1.5rem 3rem;
+    border: 1px solid #888;
+    border-radius: .5rem;
+    width: 50%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .modal-content h3{
+    font-size: 20px;
+    position: relative;
+  }
+  .modal-content h3::after{
+    position: absolute;
+    content:'';
+    width: 20%;
+    border: 2px solid var(--colorGreen);
+    bottom: -.2rem;
+    left: 0;
+  }
+  .modal-content form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .modal-content input, .modal-content select{
+    width: 100%;
+    padding: .5rem;
+  }
+  .modal-content input[type="submit"]{
+    border: none;
+    width: 100%;
+    margin-top: 1rem;
+    font-size: 15px;
+    padding: 1rem;
+    background-color: var(--colorInfo);
+    color: white;
+    border-radius: .2rem;
+  }
+  .modal-content input[type="submit"]:hover{
+    background-color: #007BFF;
+  }
+  /***/
+  .modal-content th{
+    background-color: var(--colorGreen);
+    color: white;
+    padding: .5rem;
+  }
+  .modal-title{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  #add-student{
+    width: fit-content;
+    padding: .5rem;
+    background-color: var(--colorInfo);
+    color: white;
+    border: none;
+    font-weight: bold;
+  }
+  .remove-button{
+    width: fit-content;
+    padding: .5rem;
+    background-color: #e16c4f;
+    color: white;
+    border: none;
+    font-weight: bold;
+  }
+  #add-student:active{
+    transform: scale(.95);
+  }

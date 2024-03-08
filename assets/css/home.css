@@ -1,0 +1,181 @@
+.home{
+    position: absolute;
+    width: 84vw;
+    right: 0;
+    margin-top: 4rem;
+    transition: all ease .3s;
+}
+.container-active{
+    width: 100vw
+}
+.title-dashboard{
+    width: inherit;
+    height: 7.4rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-left: 2.5%;
+    background-color: var(--colorMenuHover);
+}
+.title-dashboard h2{
+    font-weight: normal;
+}
+.title-dashboard span{
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    border-radius: .5rem;
+    background-color: var(--colorGreen);
+}
+.title-dashboard img{
+    margin: .5rem;
+    width: 1rem;
+    height: 1rem;
+}
+.home-container{
+    position: absolute;
+    top: 6rem;
+    left: 2.5%;
+    display: grid;
+    grid-template-areas: 
+        "events officers students"
+        "charts charts upcoming-event";
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 95%;
+    height: 75vh;
+    grid-gap: 2rem;
+}
+.students-card, .officers-card, .events-card{
+    gap: 1.5rem;
+    padding-left: 2rem;
+    height: 8rem;
+    transition: all ease-in-out .2s;
+}
+.students-card:hover, .officers-card:hover, .events-card:hover{
+    box-shadow: 0px 8px 5px -5px rgba(0, 0, 0, 0.3);
+}
+.students-card{
+    grid-area: students;
+    color: white;
+    background-image: linear-gradient(to right, #ee4141, #f3714f, #f79767, #fbb988, #ffd8b0);
+}
+.officers-card{
+    grid-area: officers;
+    color: white;
+    background-image: linear-gradient(to right, #fe9466, #ffb06e, #ffcb7d, #ffe493, #fffdaf);
+}
+.events-card{
+    grid-area: events;
+    color: white;
+    background: linear-gradient(to right, #9890e3 0%, #b1f4cf 100%);
+}
+.charts{
+    grid-area: charts;
+    height: fit-content;
+    justify-content: center;
+    flex-direction: column;
+    -webkit-column-break-inside: avoid;
+}
+#bar-chart{
+    width: 40rem;
+}
+.charts p{
+    padding-top: 2rem;
+}
+.upcoming-event-card{
+    grid-area: upcoming-event;
+    height: fit-content;
+    display: flex;
+    gap: 1.95rem;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem 0 1.5rem 0;
+}
+.upcoming-event-card > div{
+    height: 16.2rem;
+    width: 90%;
+    overflow-y: scroll;
+}
+.upcoming-event-card .item-event{
+    margin: auto;
+    margin-bottom: 1rem;
+    width: 85%;
+    background-color: var(--colorGrey);
+    border-left: 2px solid var(--colorGreen);
+    transition: all ease-in-out .2s;
+}
+.upcoming-event-card .item-event:hover{
+    transform: scale(.98);
+}
+.upcoming-event-card .item-event p:first-child{
+    font-weight: bold;
+    padding: .5rem 0 0 2rem;
+    color: var(--colorGreen);
+}
+.upcoming-event-card .item-event p:last-child{
+    font-size: 10px;
+    font-weight: bold;
+    padding-left: 2rem;
+}
+.home-card{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0px 8px 5px -5px rgba(0,0,0,0.1);
+    border-radius: .5rem;
+}
+.home-card div p{
+    line-height: 1.8rem;
+}
+.home-card span{
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+}
+.students-card span{
+    background-color: #ffd2d2;
+}
+.officers-card span{
+    background-color: #ffefd2;
+}
+.events-card span{
+    background-color: #d2d2ff;
+}
+.home-card img{
+    margin: 1rem;
+    display: block;
+    width: 2rem;
+    height: 2rem;
+}
+.count{
+    font-weight: bold;
+    font-size: 25px;
+}
+.count-title{
+    font-size: 14px;
+}
+@media (max-width: 768px) {
+    .home{
+        width: 100vw;
+    }
+    .home-container{
+        grid-template-areas: 
+            "students"
+            "officers"
+            "events"
+            "upcoming-event"
+            "charts";
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+    .home-card{
+        width: 100%;
+    }
+    #bar-chart{
+        width: 90%;
+    }
+    .students-card, .officers-card, .events-card{
+        height: 6rem;
+    }
+}

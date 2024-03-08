@@ -1,0 +1,354 @@
+.home{
+    position: absolute;
+    width: 84vw;
+    right: 0;
+    margin-top: 4rem;
+    transition: all ease .3s;
+    display: flex;
+    justify-content: flex-end;
+}
+.container-active{
+    width: 100vw
+}
+.title-dashboard{
+    width: 100%;
+    height: 7.4rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0 3% 0 2.5%;
+    background-color: var(--colorMenuHover);
+}
+.title-dashboard div{
+    display: flex;
+    gap: 1rem;
+}
+.title-dashboard h2{
+    font-weight: normal;
+}
+.title-dashboard span{
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    border-radius: .5rem;
+    background-color: var(--colorGreen);
+}
+.title-dashboard img{
+    margin: .5rem;
+    width: 1rem;
+    height: 1rem;
+}
+button{
+    width: fit-content;
+    padding: .5rem;
+    background-color: white;
+    color: var(--colorGreen);
+    border: none;
+    font-weight: bold;
+    box-shadow: 0px 8px 5px -5px rgba(0,0,0,0.1);
+    transition: all ease-in-out .2s;
+}
+button:hover{
+    transform: scale(.95);
+}
+.breadcrumb p:not(:last-child)::after {
+    content: "/";
+    margin: 0 5px;
+}
+.title-dashboard .breadcrumb{
+    display: flex;
+    gap: 0;
+    cursor: pointer;
+}
+.breadcrumb p:hover {
+    color: #007BFF;
+}
+.active-page{
+    color: #007BFF;
+}
+/***/
+.home-container{
+    position: absolute;
+    top: 6rem;
+    left: 2.6%;
+    display: grid;
+    grid-template-areas: 
+        "students officers events"
+        "table table table";
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 95%;
+    height: fit-content;
+    grid-gap: 2rem;
+}
+.students-card, .officers-card, .events-card{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0px 8px 5px -5px rgba(0,0,0,0.1);
+    gap: 1.5rem;
+    padding-left: 2rem;
+    height: 8rem;
+    transition: all ease-in-out .2s;
+    border-radius: .5rem;
+}
+.students-card:hover, .officers-card:hover, .events-card:hover{
+    box-shadow: 0px 8px 5px -5px rgba(0, 0, 0, 0.3);
+}
+.students-card{
+    grid-area: students;
+    background-color: white;
+    position: relative;
+    /* border-left: 2px solid rgb(251,92,112); */
+}
+.students-card div{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.officers-card{
+    position: relative;
+    grid-area: officers;
+    background-color: white;
+    /* border-left: 2px solid rgb(254,148,102); */
+}
+.events-card{
+    position: relative;
+    grid-area: events;
+    background-color: white;
+    /* border-left: 2px solid rgb(2,181,186); */
+}
+/***/
+.options-card{
+    grid-area: options;
+    height: fit-content;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: white;
+    padding: 1rem;
+}
+.options-card form{
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    border-bottom: 1px solid var(--colorGreyD);
+    gap: 1rem;
+}
+.options-card select{
+    width: 10rem;
+    padding: .5rem;
+    border: none;
+    background-color: var(--colorGrey);
+    border-left: 2px solid var(--colorInfo);
+}
+.options-card option{
+    background-color: white;
+    color: black;
+}
+input[type=submit]{
+    width: 5rem;
+    padding: .5rem;
+    border: 1px solid var(--colorInfo);
+    background-color: white;
+    color: var(--colorInfo);
+    font-weight: bold;
+    transition: all ease-in-out .2s;
+}
+input[type=submit]:hover{
+    background-color: var(--colorInfo);
+    color: white;
+}
+/***/
+.table-card{
+    grid-area: table;
+    height: fit-content;
+    position: relative;
+    border-radius: 0 0 .5rem .5rem;
+    background-color: white;
+    box-shadow: 0px 8px 5px -5px rgba(0,0,0,0.1);
+    border-top: 4px solid var(--colorGreen);
+}
+.table-item{
+    width: 100%;
+    border-collapse:collapse;
+    padding: 0 1rem 1rem 1rem;
+}
+.table-item thead th{
+    background-color: var(--colorGreen);
+    color: white;
+}
+.display{
+    margin-top: 10rem;
+}
+.table-card tbody{
+    border: solid;
+}
+.table-item tr td:last-child{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;  
+}
+.table-item tr td:last-child a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+/***/   
+.home-card div p{
+    line-height: 1.8rem;
+}
+.home-card span{
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+}
+.students-card span{
+    background-color: #ffd2d2;
+}
+.officers-card span{
+    background-color: #ffefd2;
+}
+.events-card span{
+    background-color: #d2d2ff;
+}
+.home-card img{
+    margin: 1rem;
+    display: block;
+    width: 2rem;
+    height: 2rem;
+}
+.count{
+    font-weight: bold;
+    font-size: 25px;
+}
+.count-title{
+    font-size: 14px;
+}
+.date{
+    font-size: 20px;
+}
+/***/
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 10; 
+    padding: 1% 0; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+    backdrop-filter: blur(2px);
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 1.5rem 3rem;
+    border: 1px solid #888;
+    border-radius: .5rem;
+    width: 50%;
+  }
+  
+  /* The Close Button */
+  .closeModal,
+   .close{
+    color: #aaaaaa;
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  .closeModal:hover,
+  .closeModal:focus,
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .modal-content h3{
+    font-size: 20px;
+    margin-bottom: 1rem;
+    position: relative;
+  }
+  .modal-content h3::after{
+    position: absolute;
+    content:'';
+    width: 5%;
+    border: 2px solid var(--colorGreen);
+    bottom: -.2rem;
+    left: 0;
+  }
+  .modal-content form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .modal-content label, .modal-content legend{
+    font-weight: bold;
+    margin: .5rem 0;
+    font-size: 13px;
+  }
+  .form-group label{
+    display: block;
+  }
+  .checkbox label{
+    display: inline;
+  }
+  .checkbox div{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+  }
+  .modal-content legend{
+    color: gray;
+  }
+  .form-group{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  .schedule > .form-group{
+    display: grid;
+    grid-template-columns: 1fr !important;
+    gap: 1rem;
+  }
+  .form-group input[type='time'],
+    .form-group input[type='date'],
+      .form-group input[type='text'],
+       .form-group input[type='number'],
+        .form-group textarea,
+        .form-group select{
+    width: 100%;
+    border: 1px solid;
+    border-radius: .2rem;
+  }
+  .form-group input[type='time'],
+    .form-group input[type='date'],
+      .form-group input[type='text'],
+        .form-group input[type='number'],
+            .form-group select{
+    padding: .75rem;
+  }
+  .modal-content input[type="submit"]{
+    width: 100%;
+    margin-top: 1rem;
+    font-size: 15px;
+    padding: 1rem;
+    background-color: var(--colorInfo);
+    color: white;
+    border-radius: .2rem;
+  }
+  .modal-content input[type="submit"]:hover{
+    background-color: #007BFF;
+  }

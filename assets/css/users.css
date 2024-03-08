@@ -1,0 +1,199 @@
+.home{
+    position: absolute;
+    width: 84vw;
+    right: 0;
+    margin-top: 4rem;
+    transition: all ease .3s;
+}
+.container-active{
+    width: 100vw
+}
+/***/
+.home-container{
+    position: absolute;
+    top: 1.25rem;
+    left: 2.5%;
+    width: 95%;
+    min-height: 85vh;
+    display: grid;
+    grid-template-rows: 5% 95%;
+    box-shadow: 0px 8px 5px -5px rgba(0,0,0,0.1);
+    border-radius: 0 0 .5rem .5rem;
+}
+/***/
+.active-tab {
+    font-weight: bold;
+    background-color: var(--colorGreen);
+    color: white;
+}
+.tabs{
+    display: flex;
+    align-items: center;
+}
+.tabs li{
+    padding: .75rem;
+    cursor: pointer;
+}
+.content{
+    background-color: white;
+    display: flex;
+}
+/***/
+.tab-profile{
+    position: relative;
+    width: 100%;
+}
+.profile-info{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    position: absolute;
+    flex-direction: column;
+    top: 7.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+}
+.profile-info img{
+    width: 8rem;
+    height: 8rem;
+    border: 2px solid white;
+    border-radius: 2rem;
+}
+.profile-background img{
+    width: 100%;
+    height: 12rem;
+    object-fit: cover;
+}
+.profile-detail{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    gap: 1rem;
+    margin: auto;
+    margin-top: 10rem;
+}
+.detail01{
+    display: flex;
+    justify-content: space-between;
+}
+.detail01{
+    padding: .5rem .5rem .5rem 0;
+    border-bottom: 1px solid var(--colorGreen);
+}
+.detail01 h3{
+    letter-spacing: 6px;
+}
+.detail02{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+.profile-detail span{
+    display: block;
+    font-weight: bold;
+    font-size: 18px;
+}
+.profile-detail p{
+    font-size: 14px;
+    text-transform: capitalize;
+    color: gray;
+}
+.profile-detail a{
+    display: block;
+}
+/***/
+.tab-user{
+    width: 95.75%;
+    margin: auto;
+}
+/***/
+.tab-request{
+    width: 95.75%;
+    margin: auto;
+}
+/***/
+caption{
+    text-align: left;
+    margin: 1rem 0;
+    font-weight: bold;
+    color: var(--colorOrange);
+}
+.table-card{
+    height: 30rem;
+    margin: auto;
+    margin-top: 4rem;
+    background-color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+.tab-request > .table-card{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    height: fit-content;
+}
+.table-card table{
+    width: 100%;
+    border-collapse:collapse;
+}
+.table-title th{
+    padding: .75rem;
+    color: white;
+    position: relative;
+    background-color: var(--colorGreen);
+}
+.table-data img{
+    width: 4rem;
+    height: 4rem;
+}
+/***/
+.button-card{
+    width: 100%;
+    float: inline-start;
+    border-bottom: 1px solid var(--colorGreyD);
+}
+.button-card button{
+    background-color: white;
+    color: var(--colorInfo);
+    border: 1px solid var(--colorInfo);
+    padding: .5rem;
+    margin-bottom: 1rem;
+    transition: all ease-in-out .2s;
+    font-weight: bold;
+}
+.button-card button:hover{
+    color: white;
+    background-color: var(--colorInfo);
+}
+/*Search Result*/
+#resultuser{
+  display: none;
+  position: absolute;
+  z-index: 5;
+  top: 5rem;
+  background-color: white;
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+  padding: .25rem;
+}
+#resultuser td{
+  width: fit-content;
+  padding-right: .5rem;
+  cursor: pointer;
+}
+#resultuser tbody{
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+#resultuser tr{
+  padding: .5rem;
+}
+#resultuser tr:hover{
+  background-color: var(--grey2);
+}
+/***/
+.requestAction{
+    display: flex;
+}
